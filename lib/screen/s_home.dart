@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:netflix_ui_clone/widget/w_box_slider.dart';
+import 'package:netflix_ui_clone/widget/w_circle_sliceer.dart';
 
 import '../model/model_movie.dart';
 import '../widget/w_carousel_slider.dart';
@@ -52,6 +54,8 @@ class _HomeScreenState extends State<HomeScreen> {
             const TopBar(),
           ],
         ),
+        CircleSlider(movies: movies),
+        BoxSlider(movies: movies),
       ],
     );
   }
